@@ -1,9 +1,3 @@
-
-
-
-
-
-
 #include <stdio.h>
 
 int linear_search(int a[], int n, int x) {
