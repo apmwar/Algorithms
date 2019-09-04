@@ -44,3 +44,4 @@ int main()
   	cout << setprecision(7) << sqrt(divide(A, 0, n-1));
 	return 0;
 }
+l

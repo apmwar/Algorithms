@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 #define MOD 1000000007
@@ -6,6 +7,7 @@ using namespace std;
 long long fast_power(long long base, long long power) {
     long long result = 1;
     while(power > 0) {
+
         if(power & 1)
             result = (result*base) % MOD;
         base = (base * base) % MOD;
@@ -14,7 +16,22 @@ long long fast_power(long long base, long long power) {
     return result;
 }
 
+long int possibleways(unsigned long long h, int dyn[]){
+
+}
+
+
 int main(){
-	cout << fast_power(2, 10000000000000) << " ";
-	return 0;
+	int t;
+	cin >> t;
+	while(t--){
+		unsigned long long h;
+		cin >> h;
+		int dyn[4];
+		dyn[0] = 0;
+		dyn[1] = 1;
+		dyn[2] = 2;
+		dyn[3] = 5;
+		cout << possibleways(h, dyn);
+	}
 }
